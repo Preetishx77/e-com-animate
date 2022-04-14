@@ -1,24 +1,36 @@
 import React from 'react'
 import App from './App'
 import {
-    BrowserRouter as Router,
-    Switch,
+    BrowserRouter,
+  
     Route,
     Link,
-    Routes
+    Routes,
+    useLocation,
+    useRoutes
   } from "react-router-dom";
 import Landing from './Landing'
+import {AnimatePresence , motion} from 'framer-motion';
+
+
+
 function App2() {
+  const location = useLocation();
+ 
   return (
     <>
     
-    <Router>
-<Routes>
-<Route path="/" element={<App />} />
-<Route path="/landing" element={<Landing />} />
+  
+    <AnimatePresence exitBeforeEnter>
+    <Routes location={location} key={location.pathname} >
+     <Route path='/' element={<Landing />} />
+     <Route path='/landing' element={<App />} />
+    </Routes>
+       </AnimatePresence>
+     
 
-</Routes>
-    </Router>
+    
+   
   
     </>
   )

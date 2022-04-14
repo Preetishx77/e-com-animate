@@ -1,5 +1,5 @@
 import './App.css';
-import { Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap';
+import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 import menu from './assets/menu.png';
 import img2 from './assets/man-dancing-.png';
 import shoppingcart from './assets/shopping-cart.png';
@@ -14,7 +14,7 @@ import arrow_2 from './assets/arrow_2.jpg'
 import lottie from './assets/lottie.json'
 import { Player } from "@lottiefiles/react-lottie-player";
 import bg from './assets/bg.jpeg';
-import {AnimatePresence , motion} from 'framer-motion';
+import { motion} from 'framer-motion';
 
 function App() {
 

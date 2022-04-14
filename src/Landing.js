@@ -6,13 +6,8 @@ import shoppingcart from './assets/shopping-cart.png';
 import user from './assets/user.png';
 import like from './assets/like.png';
 import female from './assets/female.png'
-import { useState } from 'react';
-import photo2 from './assets/photo2.png'
-import photo3 from './assets/photo3.png'
 import arrow from  './assets/newarrow.jpg'
 import arrow_2 from './assets/arrow_2.jpg'
-import lottie from './assets/lottie.json'
-import { Player } from "@lottiefiles/react-lottie-player";
 import bg from './assets/bg.jpeg';
 import twitter from './assets/twitter.png'
 import facebook from './assets/facebook (1).png'
@@ -21,17 +16,16 @@ import bag from './assets/bag.png'
 import hm from './assets/H&M.png'
 import uparrow from './assets/up-arrow.png'
 import { Link } from 'react-router-dom';
-import { useRef } from 'react';
-import { useEffect } from 'react';
-import gsap from 'gsap';
-import {AnimatePresence, motion} from 'framer-motion'
+
+
+import { motion} from 'framer-motion'
 
 function Landing() {
 
-  let line1 = useRef(null);
-  let line2 = useRef(null);
-  let line3 = useRef(null);
-  let line4 = useRef(null);
+  // let line1 = useRef(null);
+  // let line2 = useRef(null);
+  // let line3 = useRef(null);
+  // let line4 = useRef(null);
 
   
  
@@ -189,7 +183,7 @@ animate={{opacity:1,x:'0%'}}
 transition={{duration:0.75}}
 exit={{x:'30%'}}
  >
-  <img src={hm} alt="hm" className='img-fluid' style={{marginTop:'10vh',width:'255px'}} ref={el => {line1 = el}}/>
+  <img src={hm} alt="hm" className='img-fluid' style={{marginTop:'10vh',width:'255px'}} />
   </motion.div>
    
 </ div>

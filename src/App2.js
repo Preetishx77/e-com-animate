@@ -1,16 +1,16 @@
 import React from 'react'
 import App from './App'
 import {
-    BrowserRouter,
+    
   
     Route,
-    Link,
+   
     Routes,
     useLocation,
-    useRoutes
+    
   } from "react-router-dom";
 import Landing from './Landing'
-import {AnimatePresence , motion} from 'framer-motion';
+import {AnimatePresence} from 'framer-motion';
 
 
 

@@ -104,7 +104,7 @@ exit={{y:'-70%',size:'5rem'}}
       
         <Link to='/landing' style={{textDecoration:'none',color:'white'}}>
           
-          <div class="circle3" style={{marginLeft:'26vw',position:'absolute',marginTop:'-24vh'}}> +</div>
+          <div class="circle3" style={{marginLeft:'26vw',position:'absolute',marginTop:'-26vh'}}> +</div>
        
     
     </Link>
